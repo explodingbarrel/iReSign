@@ -29,6 +29,7 @@
     
     NSString *codesigningResult;
     NSString *verificationResult;
+    NSString *zippingResult;
     
     IBOutlet IRTextFieldDrag *pathField;
     IBOutlet IRTextFieldDrag *provisioningPathField;
@@ -70,5 +71,6 @@
 - (void)checkZip:(NSTimer *)timer;
 - (void)disableControls;
 - (void)enableControls;
+- (void)log:(NSString *)message;
 
 @end
